@@ -233,12 +233,18 @@ button {
     padding-right: 5px;
 }
 
-.rating .stars {
-    line-height: 0;
-    font-size: 18px;
+.rating .stars-wrapper {
     display: inline-block;
     transform: translateY(1px);
-    color: var(--gold);
+    width: 78px;
+    height: 13px;
+    background: url("./img/star-rating.png") 0 0 no-repeat;
+}
+
+.rating .stars{
+    display: block;
+    height: 13px;
+    background: url("./img/star-rating.png") 0 -15px no-repeat;
 }
 
 /* Rating info end */
@@ -738,6 +744,49 @@ section.item-head>.item-lead {
     font-size: 15px;
     line-height: 23px;
 }
+
+/* No prices start -> */
+
+.no-prices{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: var(--grey-light);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.no-prices svg{
+    min-width: 50px;
+}
+
+.no-prices > span{
+    margin: 0 10px;
+    justify-self: flex-start;
+    flex-grow: 1;
+}
+
+@media (max-width: 1360px) {
+    .no-prices {
+        border-radius: 0px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 600px) {
+    .no-prices{
+    flex-direction: column;
+}
+
+.no-prices > span{
+    margin: 20px 10px;
+    text-align: center;
+}
+}
+
+/* No prices end */
 
 /* Prices start -> */
 
@@ -1549,12 +1598,14 @@ amp-sidebar li {
 
         <section class="company-snippet">
             <a href="https://daroo.by">
-                <amp-img src="https://daroo.by/media/cache/supplierlogo/images.daroo.gift/daroo.by/gallery/partnerlogo/5000640/2017/06/08/593972c84a70c.jpg" alt="Название партнера + слово 'логотип'" height="70" width="115"></amp-img>
+                <amp-img src="https://daroo.by/media/cache/supplierlogo/images.daroo.gift/daroo.by/gallery/partnerlogo/5000640/2017/06/08/593972c84a70c.jpg"
+                    alt="Название партнера + слово 'логотип'" height="70" width="115"></amp-img>
             </a>
             <div class="info">
                 <a class="name" href="https://daroo.by">Минский зоопарк</a>
                 <span class="unp">УНП 190321121 Государственное культурно-просветительское учреждение «Минский зоопарк»</span>
-                <span class="rating"><span class="text">Рейтинг компании</span><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></span>
+                <span class="rating"><span class="text">Рейтинг компании</span><span class="stars-wrapper"><span class="stars"
+                            style="width:69.4%;"></span></span></span>
             </div>
         </section>
 
@@ -1566,7 +1617,8 @@ amp-sidebar li {
             <div class="info">
                 <div class="reviews-ico"><span>39 отзывов</span></div>
                 <div class="pointer-dark-ico"><span>Минск</span></div>
-                <div class="rating"><span class="text">Рейтинг услуги</span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div>
+                <div class="rating"><span class="text">Рейтинг услуги</span><span class="stars-wrapper"><span class="stars"
+                            style="width:49.5%;"></span></span></div>
             </div>
 
             <div class="item-discount"><span>Скидка до 10%</span></div>
@@ -1581,6 +1633,15 @@ amp-sidebar li {
                     впечатлениями — пройдите курс фридайвинга.</p>
             </div>
 
+
+            <div class="no-prices">
+                <svg width="40" height="40" class="smile">
+                    <path fill="#944575" d="M20 40C8.97 40 0 31.03 0 20S8.97 0 20 0s20 8.97 20 20-8.97 20-20 20zm0-38.46A18.48 18.48 0 0 0 1.54 20 18.48 18.48 0 0 0 20 38.46 18.48 18.48 0 0 0 38.46 20 18.48 18.48 0 0 0 20 1.54zm4.64 10.12a2.3 2.3 0 1 0 0 4.63 2.3 2.3 0 0 0 0-4.63zm-9.62 0a2.3 2.3 0 1 0 0 4.63 2.31 2.31 0 1 0 0-4.63zm-3.36 15.88a12.42 12.42 0 0 1 16.72-.02 1.16 1.16 0 0 0 1.55-1.71 14.74 14.74 0 0 0-19.82.02 1.16 1.16 0 0 0 1.55 1.7zm0 0" />
+                </svg>
+                <span class="text">Услуга в данный момент недоступна. Похожие предложения
+                    можно найти в разделе <b>«<a href="https://daroo.by/minsk/aktivnyj-otdyh">Активный отдых</a>»</b></span>
+                <a class="btn-dark" href="https://daroo.by/minsk/aktivnyj-otdyh">Перейти к разделу</a>
+            </div>
 
             <div class="prices">
 
@@ -1731,6 +1792,7 @@ amp-sidebar li {
                 </div>
 
             </div>
+
 
             <!-- Заголовок для каталога -->
             <h2 class="title mobile">
@@ -2224,7 +2286,9 @@ amp-sidebar li {
                 <div class="content">
                     <span class="author">Павел Ревяко</span>
                     <small><time datetime="2019-01-13">13.01.2019</time></small>
-                    <div class="rating"><span class="text">Оценка</span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div>
+                    <div class="rating"><span class="text">Оценка</span><span class="stars-wrapper"><span class="stars"
+                                style="width:100%;"></span></span></div>
+                    <p class="purple">10 лет, 16 коней, душ впечатлений и пряник</p>
                     <p class="message">Бесподобно! Но по порядку... Подарили сертификат, выбрал стоунтерапию,
                         "передарил" супруге. Ну очень скептически был настроен: "Сходи, положат на тебя камушки,
                         полежи, отдохни..." Но в итоге получил восторженный отзыв от супруги. Подробно расписывать не
@@ -2250,7 +2314,9 @@ amp-sidebar li {
                 <div class="content">
                     <span class="author">Таня Ботлицкая</span>
                     <small><time datetime="2019-01-13">13.01.2019</time></small>
-                    <div class="rating"><span class="text">Оценка</span><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div>
+                    <div class="rating"><span class="text">Оценка</span><span class="stars-wrapper"><span class="stars"
+                                style="width:80%;"></span></span></div>
+                    <p class="purple">10 лет, 16 коней, душ впечатлений и пряник</p>
                     <p class="message">Бесподобно! Но по порядку... Подарили сертификат, выбрал стоунтерапию,
                         "передарил" супруге. Ну очень скептически был настроен: "Сходи, положат на тебя камушки,
                         полежи, отдохни..." Но в итоге получил восторженный отзыв от супруги. Подробно расписывать не
@@ -2387,8 +2453,8 @@ amp-sidebar li {
 
     <!-- Меню -->
     <amp-sidebar id="sidebar" layout="nodisplay" side="left">
-        <amp-img class="amp-close-image" src="./img/close_cross.png" width="20" height="20" alt="close sidebar"
-            on="tap:sidebar.close" role="button" tabindex="0"></amp-img>
+        <amp-img class="amp-close-image" src="./img/close_cross.png" width="20" height="20" alt="close sidebar" on="tap:sidebar.close"
+            role="button" tabindex="0"></amp-img>
         <nav role="menu">
             <ul>
                 <li><a href="https://daroo.by">Развлечения и шоу-программы</a></li>
@@ -2472,7 +2538,6 @@ amp-sidebar li {
                         "priceCurrency": "BYN",
                         "itemCondition": "1 сеанс 60 мин. для 1 чел.", //Условия использования
                         "availability": "http://schema.org/InStock", //Есть в наличии / можно купить
-                        //"availability": "http://schema.org/SoldOut", //Нет в наличии / отключена
                         //"availability": "http://schema.org/LimitedAvailability", //Ограниченное предложение / акция
                         "availableAtOrFrom": {
                             "@type": "Place",
