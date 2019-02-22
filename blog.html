@@ -1,3 +1,12 @@
+
+<!-- 
+    TODO:
+    В папку img добавлена новая картинка logo.png
+    Её необходимо так же залить в проект
+
+    logo.png используется ТОЛЬКО для Schema-объекта
+-->
+
 <!doctype html>
 <html amp lang="ru">
 
@@ -6,7 +15,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="Description" content="Испытываем на себе ночные покатушки по бездорожью">
     <title>Ночной джип-трип</title>
-    <link rel="canonical" href="https://daroo.by/minsk/stoun-terapiya-tela">
+    <link rel="canonical" href="https://daroo.by/life/night-jeep-trip">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <style amp-boilerplate>
@@ -16,58 +25,47 @@
             -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
             animation: -amp-start 8s steps(1, end) 0s 1 normal both
         }
-
         @-webkit-keyframes -amp-start {
             from {
                 visibility: hidden
             }
-
             to {
                 visibility: visible
             }
         }
-
         @-moz-keyframes -amp-start {
             from {
                 visibility: hidden
             }
-
             to {
                 visibility: visible
             }
         }
-
         @-ms-keyframes -amp-start {
             from {
                 visibility: hidden
             }
-
             to {
                 visibility: visible
             }
         }
-
         @-o-keyframes -amp-start {
             from {
                 visibility: hidden
             }
-
             to {
                 visibility: visible
             }
         }
-
         @keyframes -amp-start {
             from {
                 visibility: hidden
             }
-
             to {
                 visibility: visible
             }
         }
     </style>
-
     <noscript>
         <style amp-boilerplate>
             body {
@@ -85,13 +83,8 @@
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <!-- Карусель для галереи в статье блога -->
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-    <!-- Лайтбокс для просмотра фотографий в комментариях -->
-    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
-    <!-- Фрейм для карты -->
-    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <!-- Аналитика -->
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-
 
     <style amp-custom>
         :root {
@@ -122,12 +115,6 @@
                 --section-title: 24px;
             }
         }
-
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-        html {
-  scroll-behavior: smooth;
-}
         a {
             text-decoration: none;
             color: #000;
@@ -163,48 +150,10 @@
         .purple {
             color: var(--purple);
         }
-
         .grey {
             color: var(--grey);
         }
-        /*
-        .gold {
-            color: var(--gold);
-        } */
         /* Colors end */
-        /* Buttons start */
-        .btn-light {
-            display: inline-block;
-            line-height: 30px;
-            white-space: nowrap;
-            padding: 5px 20px;
-            border-radius: 5px;
-            border: solid 1px var(--purple-light);
-            color: var(--purple);
-            font-weight: bold;
-        }
-        .btn-light:hover,
-        .btn-light:active {
-            background: var(--purple);
-            color: #fff;
-        }
-        .btn-dark {
-            display: inline-block;
-            line-height: 30px;
-            white-space: nowrap;
-            padding: 5px 20px;
-            border-radius: 5px;
-            border: solid 1px var(--purple-light);
-            background: var(--purple);
-            color: #fff;
-            font-weight: bold;
-        }
-        .btn-dark:hover,
-        .btn-dark:active {
-            color: #fff;
-            background: var(--purple-light);
-        }
-        /* Buttons end */
         
         /* Wrapper start */
         .wrap {
@@ -215,22 +164,6 @@
         /* Wrapper end */
 
         /* Span icons start */
-        .reviews-ico {
-            display: flex;
-            align-items: center;
-            min-height: 25px;
-            padding-left: 40px;
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOSIgaGVpZ2h0PSIyNiIgZmlsbD0ibm9uZSI+PGNpcmNsZSBjeD0iNy41IiBjeT0iMTEuNSIgcj0iMS41IiBzdHJva2U9IiM5NDQ1NzUiIHN0cm9rZS13aWR0aD0iMiIvPjxjaXJjbGUgY3g9IjE0LjUiIGN5PSIxMS41IiByPSIxLjUiIHN0cm9rZT0iIzk0NDU3NSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMjEuNSIgY3k9IjExLjUiIHI9IjEuNSIgc3Ryb2tlPSIjOTQ0NTc1IiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBzdHJva2U9IiM5NDQ1NzUiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTIzLjg0IDE5LjkzbC0uNDYuMzYuMS41OC4zOCAyLjUyLTEuOTQtMS41Ny0uNDctLjM4LS41Ni4yNUMxOSAyMi41MiAxNi44MiAyMyAxNC41IDIzIDYuODYgMjMgMSAxNy45IDEgMTJTNi44NiAxIDE0LjUgMSAyOCA2LjEgMjggMTJjMCAzLjA4LTEuNTYgNS45LTQuMTYgNy45M3oiLz48L3N2Zz4=');
-            background-repeat: no-repeat;
-        }
-        .pointer-dark-ico {
-            display: flex;
-            align-items: center;
-            min-height: 27px;
-            padding-left: 30px;
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIyNyIgZmlsbD0ibm9uZSI+PHBhdGggc3Ryb2tlPSIjOTQ0NTc1IiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xOCA5LjQ0YzAgMy45NS0yLjIyIDguMTMtNC41NiAxMS40YTQzLjYyIDQzLjYyIDAgMCAxLTMuOTggNC43OGwtLjczLS43MmEzNC45MSAzNC45MSAwIDAgMS0zLjE4LTMuN0MzLjIzIDE4LjA5IDEgMTMuOSAxIDkuNDUgMSA1LjI0IDQuMTMgMSA5LjUgMWMyLjk4IDAgNS4wOCAxLjA5IDYuNDQgMi42M0E4LjggOC44IDAgMCAxIDE4IDkuNDN6Ii8+PGNpcmNsZSBjeD0iOS41IiBjeT0iOS41IiByPSIyLjUiIHN0cm9rZT0iIzk0NDU3NSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+');
-            background-repeat: no-repeat;
-        }
         .pointer-light-ico {
             display: flex;
             align-items: center;
@@ -395,6 +328,7 @@
             }
         }
         /* Menu end */
+
         /* Breadcrumb start */
         .breadcrumb {
             font-size: var(--small);
@@ -494,13 +428,12 @@
 
         .entry-lead{
             margin-top: 0;
-            font-size: 19px;
+            font-size: 17px;
             line-height: 1.55em;
             padding: 20px;
             text-align: justify;
-
+            font-weight: bold;
         }
-
         /* HEAD END */
 
         /*BODY START*/
@@ -525,7 +458,6 @@
             margin: 0 -20px;
         }
         /*BODY END*/
-
 
         /* Footer start */
         footer {
@@ -730,7 +662,6 @@
         </nav>
 
         <section class="entry-head">
-
             <div class="entry-author">
                 <amp-img class="entry-author__photo" alt="Виолетта Кофман" width="68" height="68" src="https://daroo.by/media/cache/blog_record_page_avatar/http---images.daroo.gift/daroo.by/gallery/blogauthoravatars/1/2017/10/03/128.jpg"></amp-img>
                 <span class="entry-author__name">Автор: Виолетта Кофман</span>
@@ -752,7 +683,6 @@
                 корочкой, аппетитный и такой майонезный «Оливье»... Бам — праздники закончились, а цифра на
                 весах предательски потянулась вверх. Пора это исправить!
             </p>
-
         </section>
 
         <section class="entry-body">
@@ -1046,9 +976,9 @@
                 "name": "DAROO",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "http://applefostering.co.uk/apple-logo-schema/",
-                    "width": 550,
-                    "height": 60
+                    "url": "https://daroo.by/img/amp/logo.png",
+                    "width": 300,
+                    "height": 79
                 }
             },
             /* Можно использовать description страницы */
