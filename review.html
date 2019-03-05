@@ -481,11 +481,11 @@
 
         /*h1 start*/
         .title {
-    font-size: var(--section-title);
-    padding: 10px 20px 10px;
-    margin-bottom: 0;
-}
-/*h1 end*/
+            font-size: var(--section-title);
+            padding: 20px 20px 10px;
+            margin-bottom: 0;
+        }
+        /*h1 end*/
     
 /* Company snippet start */
 .company-snippet {
@@ -870,7 +870,12 @@
             </div>
         </section>
 
+        <!--
 
+            Все отличия разметки отзыва от разметки на странице "последние 10 отзывов" (reviews.html)
+            закомментированы. Закомментированные куски не нужны на этой странице
+                    
+        -->
 
         <article class="review">
             <div class="review__photo">
@@ -883,13 +888,6 @@
                     <span class="text">Оценка</span><span class="stars-wrapper"><span class="stars" style="width:40%;"></span></span>
                 </div>
                 <div class="review-item-info">
-
-                    <!-- 
-
-                        Отличия этой разметки отзыва от разметки на странице "последние 10 отзывов" просто закомментированы! 
-                    
-                    -->
-
                     <!-- <div class="left">
                         <a href="https://daroo.by/partner_url">
                             <amp-img class="review-item-info__company-logo" width="96" height="58" layout="fixed" alt="Логотип SPA-салон «Адовое-SPA»"
@@ -917,7 +915,6 @@
                     отзывы на услуги компании</a>
             </div>
         </article>
-
 
     </main>
 
@@ -1063,46 +1060,81 @@
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
-            "@type": "BlogPosting",
-            "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://daroo.by/life/night-jeep-trip"
+            "@type": "Review",
+            "itemReviewed": {
+                "@type": "Service",
+                "name": "SPA-программа «Леди из преисподней»",
+                "disambiguatingDescription": "2 часа розг, 30 минут кипящей смолы, 1 час расстрела, массаж стеклом по желанию",
+                "mainEntityOfPage": "https://daroo.by/product_url"
             },
-            "headline": "Ночные джип-приключения на бездорожье. Романтика экстрима",
-            /* Категория блогозаписи */
-            "articleSection": "Испытания",
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://daroo.by/media/cache/blog_life_desktop_record/images.daroo.gift/daroo.by/gallery/blogsnippets/15/2017/09/28/59cd0f39c37e2.jpg",
-                "height": 583,
-                "width": 1360
-            },
-            "datePublished": "2017-02-14",
-            "dateModified": "2017-02-14",
             "author": {
                 "@type": "Person",
-                "name": "Виолетта Кофман"
+                "name": "Василиса Пупкина"
             },
-            "publisher": {
-                "@type": "Organization",
-                "name": "DAROO",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://daroo.by/img/amp/logo.png",
-                    "width": 300,
-                    "height": 79
-                }
-            },
-            /* Можно использовать description страницы */
-            "description": "Испытываем на себе ночные покатушки по бездорожью",
-            /*
-                Можно вставить весь текст записи (только текст, без тегов!)
-                Если нет, то вставить первый абзац текста (лид) который вставляется в поле "Текст под заголовоком"
-                (id поля - blog_translations_ru_titleText)
-            */
-            "articleBody": "Время – после заката. Место – танковый полигон. Комплектация – два навороченных джипа. Команда – трое смельчаков и инструктор. Настрой – ноль процентов страха и сто процентов предвкушения."
+            "datePublished": "2019-01-13",
+            "description": "Сегодня посетила косметический кабинет по SPA-программе «Леди из преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": "5",
+                "ratingValue": "2",
+                "worstRating": "0"
+            }
         }
     </script>
+
+    <!-- Schema object -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "itemReviewed": {
+                "@type": "Service",
+                "name": "SPA-программа «Леди из преисподней»",
+                "disambiguatingDescription": "2 часа розг, 30 минут кипящей смолы, 1 час расстрела, массаж стеклом по желанию",
+                "mainEntityOfPage": "https://daroo.by/product_url"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Василиса Пупкина"
+            },
+            "datePublished": "2019-01-13",
+            "description": "Сегодня посетила косметический кабинет по SPA-программе «Леди из преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": "5",
+                "ratingValue": "2",
+                "worstRating": "0"
+            }
+        }
+    </script>
+
+    <!-- Schema object -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "itemReviewed": {
+                "@type": "Service",
+                "name": "SPA-программа «Леди из преисподней»",
+                "disambiguatingDescription": "2 часа розг, 30 минут кипящей смолы, 1 час расстрела, массаж стеклом по желанию",
+                "mainEntityOfPage": "https://daroo.by/product_url"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Василиса Пупкина"
+            },
+            "datePublished": "2019-01-13",
+            "description": "Сегодня посетила косметический кабинет по SPA-программе «Леди из преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": "5",
+                "ratingValue": "2",
+                "worstRating": "0"
+            }
+        }
+    </script>
+
+    <!-- ... ETC ... -->
 
 </body>
 
