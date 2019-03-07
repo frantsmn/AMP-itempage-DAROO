@@ -830,24 +830,22 @@
                     <meta property="position" content="1">
                 </li>
                 <li property="itemListElement" typeof="ListItem">
-                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/jeeptour">
-                        <span property="name">JeepTour</span></a>
+                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/catalog">
+                        <span property="name">Каталог</span></a>
                     <meta property="position" content="2">
                 </li>
                 <li property="itemListElement" typeof="ListItem">
-                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/jeeptour/otzyvy">
-                        <span property="name">Отзывы на JeepTour</span></a>
+                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/catalog">
+                        <span property="name">Джип-тур по бездорожью</span></a>
                     <meta property="position" content="3">
                 </li>
                 <li property="itemListElement" typeof="ListItem">
-                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/jeeptour/otzyvy/5002071">
-                        <span property="name">Отзыв на Джип-тур по бездорожью</span></a>
+                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/catalog">
+                        <span property="name">Отзыв</span></a>
                     <meta property="position" content="4">
                 </li>
             </ol>
         </nav>
-
-        </section>
 
         <h1 class="title">Отзыв на Джип-тур по бездорожью</h1>
 
@@ -870,51 +868,56 @@
             </div>
         </section>
 
-        <!--
+        <section class="reviews">
 
-            Все отличия разметки отзыва от разметки на странице "последние 10 отзывов" (reviews.html)
-            закомментированы. Закомментированные куски не нужны на этой странице
+            <!--
+
+            Все отличия разметки отзыва (<article class="review">) от разметки в файле
+            "последние 10 отзывов" (reviews.html) закомментированы.
+            Закомментированные куски не нужны на этой странице
                     
-        -->
+            -->
 
-        <article class="review">
-            <div class="review__photo">
-                <amp-img width="60" height="60" layout="fixed" alt="Василиса Пупкина" src="./img/review_no_photo.svg"></amp-img>
-            </div>
-            <div class="review__content">
-                <span class="review-author-name">Василиса Пупкина</span><small><a target="_blank" href="https://daroo.by/minsk/yasnost/otzyvy/5002294"><time
-                            datetime="2019-01-13">13.01.2019</time></a></small>
-                <div class="rating">
-                    <span class="text">Оценка</span><span class="stars-wrapper"><span class="stars" style="width:40%;"></span></span>
+            <article class="review">
+                <div class="review__photo">
+                    <amp-img width="60" height="60" layout="fixed" alt="Василиса Пупкина" src="./img/review_no_photo.svg"></amp-img>
                 </div>
-                <div class="review-item-info">
-                    <!-- <div class="left">
+                <div class="review__content">
+                    <span class="review-author-name">Василиса Пупкина</span><small><a target="_blank" href="https://daroo.by/minsk/yasnost/otzyvy/5002294"><time
+                                datetime="2019-01-13">13.01.2019</time></a></small>
+                    <div class="rating">
+                        <span class="text">Оценка</span><span class="stars-wrapper"><span class="stars" style="width:40%;"></span></span>
+                    </div>
+                    <div class="review-item-info">
+                        <!-- <div class="left">
                         <a href="https://daroo.by/partner_url">
                             <amp-img class="review-item-info__company-logo" width="96" height="58" layout="fixed" alt="Логотип SPA-салон «Адовое-SPA»"
                                 src="https://daroo.by/media/cache/supplierlogo/images.daroo.gift/daroo.by/gallery/partnerlogo/5000741/2018/05/29/5b0d1f75b9ab8.jpg"></amp-img>
                         </a>
                     </div> -->
-                    <!-- <div class="right"> -->
-                    <!-- <a class="review-item-info__company-name" href="https://daroo.by/partner_url">SPA-салон
+                        <!-- <div class="right"> -->
+                        <!-- <a class="review-item-info__company-name" href="https://daroo.by/partner_url">SPA-салон
                             «Адовое-SPA»</a> -->
-                    <a class="review-item-info__name" href="https://daroo.by/product_url">SPA-программа «Леди
-                        из преисподней»</a>
-                    <span class="review-item-info__usage-condition">(2 часа розг, 30 минут кипящей смолы, 1 час
-                        расстрела, массаж стеклом по желанию)</span>
-                    <!-- </div> -->
+                        <a class="review-item-info__name" href="https://daroo.by/product_url">SPA-программа «Леди
+                            из преисподней»</a>
+                        <span class="review-item-info__usage-condition">(2 часа розг, 30 минут кипящей смолы, 1 час
+                            расстрела, массаж стеклом по желанию)</span>
+                        <!-- </div> -->
+                    </div>
+                    <p class="review-text">Сегодня посетила косметический кабинет по SPA-программе «Леди из
+                        преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая
+                        свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!</p>
+                    <amp-carousel lightbox height="100" layout="fixed-height" type="carousel">
+                        <amp-img height="100" width="100" alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63cb6d9a8.jpg"></amp-img>
+                        <amp-img height="100" width="100" alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"></amp-img>
+                    </amp-carousel>
+                    <a class="btn-light" href="https://daroo.by/product_reviews">Все отзывы на услугу</a><a class="btn-light"
+                        href="https://daroo.by/partner_reviews">Все
+                        отзывы на услуги компании</a>
                 </div>
-                <p class="review-text">Сегодня посетила косметический кабинет по SPA-программе «Леди из
-                    преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая
-                    свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!</p>
-                <amp-carousel lightbox height="100" layout="fixed-height" type="carousel">
-                    <amp-img height="100" width="100" alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63cb6d9a8.jpg"></amp-img>
-                    <amp-img height="100" width="100" alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"></amp-img>
-                </amp-carousel>
-                <a class="btn-light" href="https://daroo.by/product_reviews">Все отзывы на услугу</a><a class="btn-light"
-                    href="https://daroo.by/partner_reviews">Все
-                    отзывы на услуги компании</a>
-            </div>
-        </article>
+            </article>
+
+        </section>
 
     </main>
 
@@ -1081,60 +1084,6 @@
             }
         }
     </script>
-
-    <!-- Schema object -->
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "Service",
-                "name": "SPA-программа «Леди из преисподней»",
-                "disambiguatingDescription": "2 часа розг, 30 минут кипящей смолы, 1 час расстрела, массаж стеклом по желанию",
-                "mainEntityOfPage": "https://daroo.by/product_url"
-            },
-            "author": {
-                "@type": "Person",
-                "name": "Василиса Пупкина"
-            },
-            "datePublished": "2019-01-13",
-            "description": "Сегодня посетила косметический кабинет по SPA-программе «Леди из преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "2",
-                "worstRating": "0"
-            }
-        }
-    </script>
-
-    <!-- Schema object -->
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "Service",
-                "name": "SPA-программа «Леди из преисподней»",
-                "disambiguatingDescription": "2 часа розг, 30 минут кипящей смолы, 1 час расстрела, массаж стеклом по желанию",
-                "mainEntityOfPage": "https://daroo.by/product_url"
-            },
-            "author": {
-                "@type": "Person",
-                "name": "Василиса Пупкина"
-            },
-            "datePublished": "2019-01-13",
-            "description": "Сегодня посетила косметический кабинет по SPA-программе «Леди из преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "2",
-                "worstRating": "0"
-            }
-        }
-    </script>
-
-    <!-- ... ETC ... -->
 
 </body>
 

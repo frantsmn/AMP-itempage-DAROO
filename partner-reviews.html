@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <meta name="Description" content="Испытываем на себе ночные покатушки по бездорожью">
-    <title>DAROO отзывы клиентов</title>
+    <meta name="Description" content="Коротко и о главном. Мероприятие улётное. Мы попали в такой день, Когда с самого утра лил дождь, и ехать по трассе было ещё интереснее. 1 час вполне хватило, чтобы насладиться поездкой. Хороший сопровождающий, даёт советы, можно поговорить в пути...">
+    <title>Хочу еще! - JeepTour, отзыв на Джип-тур по бездорожью: Кирилл Иванович</title>
     <link rel="canonical" href="https://daroo.by/life/night-jeep-trip">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -478,61 +478,63 @@
         }
     
         /* Breadcrumb end */
-    
-    
-        /* Reviews start -> */
-        .reviews {
-            padding: 20px;
-        }
-    
-        .reviews h1 {
+
+        /*h1 start*/
+        .title {
             font-size: var(--section-title);
+            padding: 20px 20px 10px;
+            margin-bottom: 0;
         }
+        /*h1 end*/
     
-        .reviews-badge {
-            display: flex;
-            align-items: center;
-            max-width: 800px;
-            line-height: 1.55em;
-        }
-    
-        .reviews-badge .badge {
-            display: flex;
-            align-items: center;
-            font-weight: bold;
-            padding: 5px;
-            border: solid 2px var(--gold);
-            color: var(--purple);
-            border-radius: 25px;
-            margin-right: 10px;
-            white-space: nowrap;
-        }
-    
-        /*Mobile*/
-        @media (max-width: 500px) {
-            .reviews .reviews-badge {
-                flex-wrap: wrap;
-            }
-    
-            .reviews .badge {
-                margin-bottom: 1em;
-            }
-        }
-    
-        .reviews .badge span {
-            padding: 5px 5px 5px 10px;
-        }
-    
-        .reviews-description {
-            margin-bottom: 2em;
-            line-height: 1.55em;
-            max-width: 800px;
-        }
+/* Company snippet start */
+.company-snippet {
+    max-width: 800px;
+    display: flex;
+    padding: 20px 20px 0;
+    justify-content: start;
+    align-items: center;
+}
+
+.company-snippet amp-img {
+    margin-right: 20px;
+}
+
+.company-snippet .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.company-snippet span {
+    line-height: 150%;
+}
+
+.company-snippet .name {
+    font-weight: bold;
+    line-height: 200%;
+}
+
+.company-snippet .unp {
+    color: var(--grey);
+}
+
+.company-snippet .rating {
+    font-size: var(--small);
+    line-height: 200%;
+}
+
+/* Company snippet end */
+
+.reviews{
+    margin: 15px 0;
+}
     
         /*review start*/
         .review {
             display: flex;
-            padding-top: 30px;
+            padding: 0px 20px;
+            margin: 15px 0;
             max-width: 800px;
         }
     
@@ -568,39 +570,11 @@
     
         .review-item-info {
             display: flex;
-            line-height: 1.25em;
+            line-height: 150%;
             margin: 1em 0;
-        }
-    
-        .review-item-info .left {
-            display: flex;
-            align-items: center;
-            align-content: center;
-        }
-    
-        .review-item-info .left a {
-            line-height: 0;
-        }
-    
-        .review-item-info .right {
-            margin-left: 1em;
-            display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             justify-items: center;
-        }
-    
-        @media (max-width: 450px) {
-    
-            .review-item-info {
-                flex-direction: column;
-                margin: 1em 0;
-            }
-    
-            .review-item-info .right {
-                margin: 0.5em 0 0;
-            }
-    
         }
     
         .review-item-info__company-logo img {
@@ -648,11 +622,6 @@
     
         /* Review end */
     
-        .reviews .btn-dark {
-            margin-top: 30px;
-        }
-    
-        /* Reviews end -> */
     
         /* Footer start */
         footer {
@@ -866,38 +835,47 @@
                     <meta property="position" content="1">
                 </li>
                 <li property="itemListElement" typeof="ListItem">
-                    <a property="item" typeof="WebPage" href="https://daroo.by/otzyvy">
-                        <span property="name">Отзывы</span></a>
+                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/jeeptour">
+                        <span property="name">JeepTour</span></a>
                     <meta property="position" content="2">
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/jeeptour/otzyvy">
+                        <span property="name">Отзывы</span></a>
+                    <meta property="position" content="3">
                 </li>
             </ol>
         </nav>
 
+        <h1 class="title">Отзывы на JeepTour (16)</h1>
+
+        <!--
+
+            Разметка следующего блока такая же как и на AMP странице товара
+
+        -->
+
+        <section class="company-snippet">
+            <a href="https://daroo.by">
+                <amp-img src="https://daroo.by/media/cache/supplierlogo/images.daroo.gift/daroo.by/gallery/partnerlogo/5000640/2017/06/08/593972c84a70c.jpg"
+                    alt="Название партнера + слово 'логотип'" height="70" width="115"></amp-img>
+            </a>
+            <div class="info">
+                <a class="name" href="https://daroo.by">Минский зоопарк</a>
+                <span class="unp">УНП 190321121 Государственное культурно-просветительское учреждение «Минский зоопарк»</span>
+                <span class="rating"><span class="text">Рейтинг компании</span><span class="stars-wrapper"><span class="stars"
+                            style="width:69.4%;"></span></span></span>
+            </div>
         </section>
 
-        
+        <!--
+
+            Все отличия разметки отзыва от разметки на странице "последние 10 отзывов" (reviews.html)
+            закомментированы. Закомментированные куски не нужны на этой странице
+   
+        -->
 
         <section class="reviews">
-
-            <h1 class="title">Последние 10 отзывов клиентов DAROO из 1689</h1>
-
-            <p class="reviews-description">Хотите попробовать что-то новое, но не уверены, что вам это понравится?
-                Специально для таких случаев
-                компания DAROO собрала на этой странице реальные отзывы клиентов. Каждый день десятки пользователей
-                рассказывают здесь о своих полученных впечатлениях и эмоциях. Даже если отзывы негативные, наши
-                специалисты все равно публикуют их, ведь основной целью является повышение качества и эффективности
-                предоставляемых услуг, а не бесполезное накручивание рейтинга. Теперь не нужно долго размышлять,
-                достаточно прочитать несколько отзывов тех, кто уже опробовал интересующую вас услугу, и сделать
-                правильный выбор.</p>
-
-            <div class="reviews-badge">
-                <span class="badge">
-                    <amp-img width="33" height="30" layout="fixed" alt="" src="./img/check-ico.svg"></amp-img>
-                    <span>На 100% подлинные отзывы</span>
-                </span>
-                <span>Только настоящие клиенты, воспользовавшиеся услугой. Только
-                    настоящие мнения.</span>
-            </div>
 
             <article class="review">
                 <div class="review__photo">
@@ -910,20 +888,20 @@
                         <span class="text">Оценка</span><span class="stars-wrapper"><span class="stars" style="width:40%;"></span></span>
                     </div>
                     <div class="review-item-info">
-                        <div class="left">
-                            <a href="https://daroo.by/partner_url">
-                                <amp-img class="review-item-info__company-logo" width="96" height="58" layout="fixed"
-                                    alt="Логотип SPA-салон «Адовое-SPA»" src="https://daroo.by/media/cache/supplierlogo/images.daroo.gift/daroo.by/gallery/partnerlogo/5000741/2018/05/29/5b0d1f75b9ab8.jpg"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right">
-                            <a class="review-item-info__company-name" href="https://daroo.by/partner_url">SPA-салон
-                                «Адовое-SPA»</a>
-                            <a class="review-item-info__name" href="https://daroo.by/product_url">SPA-программа «Леди
-                                из преисподней»</a>
-                            <span class="review-item-info__usage-condition">(2 часа розг, 30 минут кипящей смолы, 1 час
-                                расстрела, массаж стеклом по желанию)</span>
-                        </div>
+                        <!-- <div class="left">
+                        <a href="https://daroo.by/partner_url">
+                            <amp-img class="review-item-info__company-logo" width="96" height="58" layout="fixed" alt="Логотип SPA-салон «Адовое-SPA»"
+                                src="https://daroo.by/media/cache/supplierlogo/images.daroo.gift/daroo.by/gallery/partnerlogo/5000741/2018/05/29/5b0d1f75b9ab8.jpg"></amp-img>
+                        </a>
+                    </div> -->
+                        <!-- <div class="right"> -->
+                        <!-- <a class="review-item-info__company-name" href="https://daroo.by/partner_url">SPA-салон
+                            «Адовое-SPA»</a> -->
+                        <a class="review-item-info__name" href="https://daroo.by/product_url">SPA-программа «Леди
+                            из преисподней»</a>
+                        <span class="review-item-info__usage-condition">(2 часа розг, 30 минут кипящей смолы, 1 час
+                            расстрела, массаж стеклом по желанию)</span>
+                        <!-- </div> -->
                     </div>
                     <p class="review-text">Сегодня посетила косметический кабинет по SPA-программе «Леди из
                         преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая
@@ -940,58 +918,6 @@
 
             <article class="review">
                 <div class="review__photo">
-                    <amp-img width="60" height="60" layout="fixed" alt="Василиса Пупкина" src="https://daroo.by/media/cache/reviews_user_avatar/https---pp.vk.me/c403320/v403320172/51bc/0AcicunoHV0.jpg"></amp-img>
-                </div>
-                <div class="review__content">
-                    <span class="review-author-name">Василиса Пупкина</span><small><a target="_blank" href="https://daroo.by/minsk/yasnost/otzyvy/5002294"><time
-                                datetime="2019-01-13">13.01.2019</time></a></small>
-                    <div class="rating">
-                        <span class="text">Оценка</span><span class="stars-wrapper"><span class="stars" style="width:40%;"></span></span>
-                    </div>
-                    <div class="review-item-info">
-                        <div class="left">
-                            <a href="https://daroo.by/partner_url">
-                                <amp-img class="review-item-info__company-logo" width="96" height="58" layout="fixed"
-                                    alt="Логотип SPA-салон «Адовое-SPA»" src="https://daroo.by/media/cache/supplierlogo/images.daroo.gift/daroo.by/gallery/partnerlogo/5000621/2018/06/25/5b314306e1712.jpg"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right">
-                            <a class="review-item-info__company-name" href="https://daroo.by/partner_url">SPA-салон
-                                «Адовое-SPA»</a>
-                            <a class="review-item-info__name" href="https://daroo.by/product_url">SPA-программа «Леди
-                                из
-                                преисподней»</a>
-                            <span class="review-item-info__usage-condition">(2 часа розг, 30 минут кипящей смолы)</span>
-                        </div>
-                    </div>
-                    <p class="review-text">Сегодня посетила косметический кабинет по SPA-программе «Леди из
-                        преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая
-                        свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!</p>
-                    <amp-carousel lightbox height="100" layout="fixed-height" type="carousel">
-                        <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63cb6d9a8.jpg"
-                            height="100" width="100"></amp-img>
-                        <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"
-                            height="100" width="100"></amp-img>
-                        <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63cb6d9a8.jpg"
-                            height="100" width="100"></amp-img>
-                        <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"
-                            height="100" width="100"></amp-img>
-                        <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63cb6d9a8.jpg"
-                            height="100" width="100"></amp-img>
-                        <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"
-                            height="100" width="100"></amp-img>
-                        <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63cb6d9a8.jpg"
-                            height="100" width="100"></amp-img>
-                        <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"
-                            height="100" width="100"></amp-img>
-                    </amp-carousel>
-                    <a class="btn-light" href="https://daroo.by/">Все отзывы на услугу</a><a class="btn-light" href="https://daroo.by/">Все
-                        отзывы на услуги компании</a>
-                </div>
-            </article>
-
-            <article class="review">
-                <div class="review__photo">
                     <amp-img width="60" height="60" layout="fixed" alt="Василиса Пупкина" src="./img/review_no_photo.svg"></amp-img>
                 </div>
                 <div class="review__content">
@@ -1001,75 +927,39 @@
                         <span class="text">Оценка</span><span class="stars-wrapper"><span class="stars" style="width:40%;"></span></span>
                     </div>
                     <div class="review-item-info">
-                        <div class="left">
+                        <!-- <div class="left">
                             <a href="https://daroo.by/partner_url">
-                                <amp-img class="review-item-info__company-logo" width="96" height="58" layout="fixed"
-                                    alt="Логотип SPA-салон «Адовое-SPA»" src="https://daroo.by/media/cache/supplierlogo/images.daroo.gift/daroo.by/gallery/partnerlogo/5000741/2018/05/29/5b0d1f75b9ab8.jpg"></amp-img>
+                                <amp-img class="review-item-info__company-logo" width="96" height="58" layout="fixed" alt="Логотип SPA-салон «Адовое-SPA»"
+                                    src="https://daroo.by/media/cache/supplierlogo/images.daroo.gift/daroo.by/gallery/partnerlogo/5000741/2018/05/29/5b0d1f75b9ab8.jpg"></amp-img>
                             </a>
-                        </div>
-                        <div class="right">
-                            <a class="review-item-info__company-name" href="https://daroo.by/partner_url">SPA-салон
-                                «Адовое-SPA»</a>
-                            <a class="review-item-info__name" href="https://daroo.by/product_url">SPA-программа «Леди
-                                из
-                                преисподней»</a>
-                            <span class="review-item-info__usage-condition">(2 часа розг, 30 минут кипящей смолы, 1 час
-                                расстрела, массаж стеклом по желанию)</span>
-                        </div>
-                    </div>
-                    <p class="review-text">Сегодня посетила косметический кабинет по SPA-программе «Леди из
-                        преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая
-                        свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!</p>
-                    <a class="btn-light" href="https://daroo.by/">Все отзывы на услугу</a><a class="btn-light" href="https://daroo.by/">Все
-                        отзывы на услуги компании</a>
-                </div>
-            </article>
-
-            <article class="review">
-                <div class="review__photo">
-                    <amp-img width="60" height="60" layout="fixed" alt="Василиса Пупкина" src="./img/review_no_photo.svg"></amp-img>
-                </div>
-                <div class="review__content">
-                    <span class="review-author-name">Василиса Пупкина</span><small><time datetime="2019-01-13">13.01.2019</time></small>
-                    <div class="rating">
-                        <span class="text">Оценка</span><span class="stars-wrapper"><span class="stars" style="width:40%;"></span></span>
-                    </div>
-                    <div class="review-item-info">
-                        <div class="left">
-                            <a href="https://daroo.by/partner_url">
-                                <amp-img class="review-item-info__company-logo" width="96" height="58" layout="fixed"
-                                    alt="Логотип SPA-салон «Адовое-SPA»" src="https://daroo.by/media/cache/supplierlogo/images.daroo.gift/daroo.by/gallery/partnerlogo/5000741/2018/05/29/5b0d1f75b9ab8.jpg"></amp-img>
-                            </a>
-                        </div>
-                        <div class="right">
-                            <a class="review-item-info__company-name" href="https://daroo.by/partner_url">SPA-салон
-                                «Адовое-SPA»</a>
-                            <a class="review-item-info__name" href="https://daroo.by/product_url">SPA-программа «Леди
-                                из
-                                преисподней»</a>
-                            <span class="review-item-info__usage-condition">(2 часа розг, 30 минут кипящей смолы, 1 час
-                                расстрела, массаж стеклом по желанию)</span>
-                        </div>
+                        </div> -->
+                        <!-- <div class="right"> -->
+                        <!-- <a class="review-item-info__company-name" href="https://daroo.by/partner_url">SPA-салон
+                                «Адовое-SPA»</a> -->
+                        <a class="review-item-info__name" href="https://daroo.by/product_url">SPA-программа «Леди
+                            из преисподней»</a>
+                        <span class="review-item-info__usage-condition">(2 часа розг, 30 минут кипящей смолы, 1 час
+                            расстрела, массаж стеклом по желанию)</span>
+                        <!-- </div> -->
                     </div>
                     <p class="review-text">Сегодня посетила косметический кабинет по SPA-программе «Леди из
                         преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая
                         свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!</p>
                     <amp-carousel lightbox height="100" layout="fixed-height" type="carousel">
-                        <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63cb6d9a8.jpg"
-                            height="100" width="100"></amp-img>
-                        <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"
-                            height="100" width="100"></amp-img>
+                        <amp-img height="100" width="100" alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63cb6d9a8.jpg"></amp-img>
+                        <amp-img height="100" width="100" alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"></amp-img>
                     </amp-carousel>
-                    <a class="btn-light" href="https://daroo.by/">Все отзывы на услугу</a><a class="btn-light" href="https://daroo.by/">Все
+                    <a class="btn-light" href="https://daroo.by/product_reviews">Все отзывы на услугу</a><a class="btn-light"
+                        href="https://daroo.by/partner_reviews">Все
                         отзывы на услуги компании</a>
                 </div>
             </article>
-
-            <div>
-                <a class="btn-dark" href="https://daroo.by/otzyvy?next=20">Следующие 10 отзывов</a>
-            </div>
 
         </section>
+
+        <div>
+            <a class="btn-dark" href="https://daroo.by/otzyvy?next=20">Читать все отзывы</a>
+        </div>
 
     </main>
 
@@ -1211,59 +1101,65 @@
         </script>
     </amp-analytics>
 
-    <!-- Schema object -->
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "Service",
-                "name": "SPA-программа «Леди из преисподней»",
-                "disambiguatingDescription": "2 часа розг, 30 минут кипящей смолы, 1 час расстрела, массаж стеклом по желанию",
-                "mainEntityOfPage": "https://daroo.by/product_url"
-            },
-            "author": {
-                "@type": "Person",
-                "name": "Василиса Пупкина"
-            },
-            "datePublished": "2019-01-13",
-            "description": "Сегодня посетила косметический кабинет по SPA-программе «Леди из преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "2",
-                "worstRating": "0"
-            }
-        }
-    </script>
 
     <!-- Schema object -->
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-                "@type": "Service",
-                "name": "SPA-программа «Леди из преисподней»",
-                "disambiguatingDescription": "2 часа розг, 30 минут кипящей смолы, 1 час расстрела, массаж стеклом по желанию",
-                "mainEntityOfPage": "https://daroo.by/product_url"
+            "@type": "Organization",
+            "name": "Салон красоты «MonSPA»", //Полное наименование партнера
+            "mainEntityOfPage": "https://daroo.by/minsk/partner_url/otzyvy",
+            "aggregateRating": { //Общий рейтинг партнера
+                "@type": "AggregateRating",
+                "bestRating": "100",
+                "ratingCount": "3",
+                "ratingValue": "85"
             },
-            "author": {
-                "@type": "Person",
-                "name": "Василиса Пупкина"
-            },
-            "datePublished": "2019-01-13",
-            "description": "Сегодня посетила косметический кабинет по SPA-программе «Леди из преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!",
-            "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "ratingValue": "2",
-                "worstRating": "0"
-            }
+            "review": [{
+                    "@type": "Review",
+                    "itemReviewed": {
+                        "@type": "Service",
+                        "name": "SPA-программа «Леди из преисподней»",
+                        "disambiguatingDescription": "2 часа розг, 30 минут кипящей смолы, 1 час расстрела, массаж стеклом по желанию",
+                        "mainEntityOfPage": "https://daroo.by/product_url"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Василиса Пупкина"
+                    },
+                    "datePublished": "2019-01-13",
+                    "description": "Сегодня посетила косметический кабинет по SPA-программе «Леди из преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "bestRating": "5",
+                        "ratingValue": "2",
+                        "worstRating": "0"
+                    }
+                },
+                {
+                    "@type": "Review",
+                    "itemReviewed": {
+                        "@type": "Service",
+                        "name": "SPA-программа «Леди из преисподней»",
+                        "disambiguatingDescription": "2 часа розг, 30 минут кипящей смолы, 1 час расстрела, массаж стеклом по желанию",
+                        "mainEntityOfPage": "https://daroo.by/product_url"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Василиса Пупкина"
+                    },
+                    "datePublished": "2019-01-13",
+                    "description": "Сегодня посетила косметический кабинет по SPA-программе «Леди из преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "bestRating": "5",
+                        "ratingValue": "2",
+                        "worstRating": "0"
+                    }
+                }
+            ]
         }
     </script>
-
-    <!-- ... ETC ... -->
 
 </body>
 

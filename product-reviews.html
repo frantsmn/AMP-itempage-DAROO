@@ -488,6 +488,46 @@
         .reviews h1 {
             font-size: var(--section-title);
         }
+
+        .review-item-snippet{
+            display: flex;
+            margin: 0 0 30px;
+        }
+
+        .review-item-snippet__image{
+            min-width: 270px;
+            max-width: 315px;
+            flex-grow: 1;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 0 15px 15px 0;
+        }
+
+        .review-item-snippet__content {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        @media (max-width: 600px) {
+            .review-item-snippet {
+                flex-direction: column;
+            }
+        }
+
+        .review-item-snippet__content p{
+            margin: 0 0 10px;
+            font-weight: bold;
+            font-size: var(--h2);
+        }
+
+        .review-item-snippet__content .rating{
+            margin: 5px 0 15px 0;
+            padding: 0;
+        }
+
+        .review-item-snippet__content .btn-light{
+            width: fit-content;
+        }
     
         .reviews-badge {
             display: flex;
@@ -866,29 +906,40 @@
                     <meta property="position" content="1">
                 </li>
                 <li property="itemListElement" typeof="ListItem">
-                    <a property="item" typeof="WebPage" href="https://daroo.by/otzyvy">
-                        <span property="name">Отзывы</span></a>
+                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/catalog">
+                        <span property="name">Каталог</span></a>
                     <meta property="position" content="2">
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/catalog">
+                        <span property="name">Джип-тур по бездорожью</span></a>
+                    <meta property="position" content="3">
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" href="https://daroo.by/minsk/catalog">
+                        <span property="name">Отзывы</span></a>
+                    <meta property="position" content="4">
                 </li>
             </ol>
         </nav>
 
-        </section>
-
-        
-
         <section class="reviews">
 
-            <h1 class="title">Последние 10 отзывов клиентов DAROO из 1689</h1>
+            <h1 class="title">Отзывы на Джип-Тур по бездорожью (4)</h1>
 
-            <p class="reviews-description">Хотите попробовать что-то новое, но не уверены, что вам это понравится?
-                Специально для таких случаев
-                компания DAROO собрала на этой странице реальные отзывы клиентов. Каждый день десятки пользователей
-                рассказывают здесь о своих полученных впечатлениях и эмоциях. Даже если отзывы негативные, наши
-                специалисты все равно публикуют их, ведь основной целью является повышение качества и эффективности
-                предоставляемых услуг, а не бесполезное накручивание рейтинга. Теперь не нужно долго размышлять,
-                достаточно прочитать несколько отзывов тех, кто уже опробовал интересующую вас услугу, и сделать
-                правильный выбор.</p>
+            <section class="review-item-snippet">
+                <a class="review-item-snippet__image" href="https://daroo.by/minsk/dzhip-tur">
+                    <amp-img alt="Джип-тур по бездорожью" width="315" height="200" layout="responsive" src="https://daroo.by/media/cache/cabinet_activations_map_image/images.daroo.gift/daroo.by/gallery/productpricebanner/5003032/2016/11/10/582479b373a26.jpg"></amp-img>
+                </a>
+                <div class="review-item-snippet__content">
+                    <p>Джип-тур по бездорожью и кочкам канавам длинное название</p>
+                    <p>79.00 руб. - 447.00 руб.</p>
+                    <div class="rating">
+                        <span class="text">Рейтинг</span><span class="stars-wrapper"><span class="stars" style="width:40%;"></span></span>
+                    </div>
+                    <a class="btn-light" href="https://daroo.by/minsk/dzhip-tur">Сравить цены</a>
+                </div>
+            </section>
 
             <div class="reviews-badge">
                 <span class="badge">
@@ -932,9 +983,9 @@
                         <amp-img height="100" width="100" alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63cb6d9a8.jpg"></amp-img>
                         <amp-img height="100" width="100" alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"></amp-img>
                     </amp-carousel>
-                    <a class="btn-light" href="https://daroo.by/product_reviews">Все отзывы на услугу</a><a class="btn-light"
+                    <!-- <a class="btn-light" href="https://daroo.by/product_reviews">Все отзывы на услугу</a><a class="btn-light"
                         href="https://daroo.by/partner_reviews">Все
-                        отзывы на услуги компании</a>
+                        отзывы на услуги компании</a> -->
                 </div>
             </article>
 
@@ -985,8 +1036,8 @@
                         <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"
                             height="100" width="100"></amp-img>
                     </amp-carousel>
-                    <a class="btn-light" href="https://daroo.by/">Все отзывы на услугу</a><a class="btn-light" href="https://daroo.by/">Все
-                        отзывы на услуги компании</a>
+                    <!-- <a class="btn-light" href="https://daroo.by/">Все отзывы на услугу</a><a class="btn-light" href="https://daroo.by/">Все
+                        отзывы на услуги компании</a> -->
                 </div>
             </article>
 
@@ -1020,8 +1071,8 @@
                     <p class="review-text">Сегодня посетила косметический кабинет по SPA-программе «Леди из
                         преисподней». Программу проводила мастер Сатанина, очень хорошая, милая девушка, знающая
                         свое дело. Процедура очень понравилась, расслабилась на все 100%. Рекомендую!</p>
-                    <a class="btn-light" href="https://daroo.by/">Все отзывы на услугу</a><a class="btn-light" href="https://daroo.by/">Все
-                        отзывы на услуги компании</a>
+                    <!-- <a class="btn-light" href="https://daroo.by/">Все отзывы на услугу</a><a class="btn-light" href="https://daroo.by/">Все
+                        отзывы на услуги компании</a> -->
                 </div>
             </article>
 
@@ -1060,8 +1111,8 @@
                         <amp-img alt="" src="https://daroo.by/media/cache/product_slider_original/images.daroo.gift/daroo.by/gallery/price/5018604/2017/12/21/5a3b63ce99ba0.jpg"
                             height="100" width="100"></amp-img>
                     </amp-carousel>
-                    <a class="btn-light" href="https://daroo.by/">Все отзывы на услугу</a><a class="btn-light" href="https://daroo.by/">Все
-                        отзывы на услуги компании</a>
+                    <!-- <a class="btn-light" href="https://daroo.by/">Все отзывы на услугу</a><a class="btn-light" href="https://daroo.by/">Все
+                        отзывы на услуги компании</a> -->
                 </div>
             </article>
 
